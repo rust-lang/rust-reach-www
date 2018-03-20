@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers|Fira+Sans');
+
+body {
+  margin: 0;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+header h1, header h2 {
+  font-family: 'Bangers', sans-serif;
+  background-color: #2CAFD9;
+  color: white;
+  padding: 0 30px 20px 30px;;
+  display: inline-box;
+  width: 60%;
+  font-size: 8vw;
+  margin: 0 auto;
+  text-shadow: 4px 4px 0px black;
+}
+
+header h2 {
+  font-size: 6vw;
+  padding: 20px 30px 0 30px;
+}
+
+header {
+  padding: 50px;
+  text-align: center;
+  background-image: url("halftone2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+nav, footer {
+  text-align: center;
+  background: black;
+  color: white;
+  padding: 20px;
+}
+
+#logo {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  height: 40px;;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.row {
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+section {
+  width: 80%;
+  margin: 10px auto;
+}
+
+section h2 {
+  font-family: 'Bangers', sans-serif;
+  color: #2CAFD9;
+  text-shadow: 2px 2px 0px black;
+}
+
+.organizer {
+  display: inline-block;
+  width: 40%;
+  background: black;
+  margin: 10px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.organizer img {
+  width: 80%;
+}
+
+.organizer h3, #projects h3, .partner h4 {
+  font-size: 1.8em;
+  color: white;
+  font-family: 'Bangers', sans-serif;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000,
+  2px 2px 0px #2CAFD9;  
+  margin: 0 auto;
+}
+
+.project {
+  padding: 20px;
+  background-color: black;
+  color: white;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.description {
+  text-align: left;
+}
+
+.partner h4 {
+  font-size: 1.2em;
+}
+
+.description {
+  display: inline-block;
+  width: 65%;
+}
+
+.partner {
+  vertical-align: top;
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  padding: 40px 0 0 20px;
+}
+
+.partner img {
+  width: 80%;
+}
+
+.bold-highlight {
+  font-weight: 700;
+  text-shadow: 1px 1px 0px #2CAFD9;
+}
