@@ -81,7 +81,7 @@ section h2 {
   width: 80%;
 }
 
-.organizer h3, #projects h3, .partner h4 {
+.organizer h3, #projects h3, .partner h4, .quote h4 {
   font-size: 1.8em;
   color: white;
   font-family: 'Bangers', sans-serif;
@@ -94,7 +94,7 @@ section h2 {
   margin: 0 auto;
 }
 
-.project {
+.project, .testimonial {
   padding: 20px;
   background-color: black;
   color: white;
@@ -125,6 +125,46 @@ section h2 {
 
 .partner img {
   width: 80%;
+}
+
+.quote {
+  width: 70%;  
+  vertical-align: top;
+  display: inline-block;
+}
+
+.person {
+  width: 20%;
+  display: inline-block;
+}
+
+.person img {
+  width: 80%;
+}
+
+blockquote {
+  border-left: 10px solid #2CAFD9;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D";
+}
+
+blockquote:before {
+  color: #2CAFD9;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.quote h4 {
+  text-align: right;
+}
+
+#about li {
+  line-height: 0.8em;
+  margin-left: 20px;
 }
 
 .bold-highlight {
