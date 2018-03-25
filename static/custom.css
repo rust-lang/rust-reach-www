@@ -59,7 +59,9 @@ nav a {
 
 section {
   width: 80%;
-  margin: 10px auto;
+  margin: 40px auto;
+  border-bottom: 5px dotted black;
+  padding-bottom: 40px;
 }
 
 section h2 {
