@@ -171,3 +171,26 @@ blockquote:before {
   font-weight: 700;
   text-shadow: 1px 1px 0px #2CAFD9;
 }
+
+.button {
+  font-size: 1.8em;
+  padding: 10px 20px;
+  height: auto;
+  font-family: 'Bangers', sans-serif;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000,
+  2px 2px 0px #000;  
+  display: block;
+  margin: 20px 0;
+}
+
+.button.button-primary {
+  background-color: #2CAFD9;
+}
+
+#apply p {
+  text-align: center;
+}
