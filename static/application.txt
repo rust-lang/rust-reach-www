@@ -1,0 +1,33 @@
+# Increasing Rust's Reach 2018 Application
+
+Your answers will be used to inform our choices regarding participants for the program. We will not share this information publicly without seeking additional explicit consent from you.
+
+1. Your name (Whatever name you'd like us to call you!):
+
+2. Your email address (This will only be used by the organizers of this initiative to contact you about your project. It will not be shared with other participants or with third parties):
+
+3. Your pronouns (Example answers: she, he, they. More information: https://www.mypronouns.org/sharing):
+
+4. Your timezone (UTC offset) for the majority of May 15 - August 15:
+
+5. What languages do you speak, and at what fluency level? Please separate each language with a comma (Example answer: Native Spanish speaker, professional working English):
+
+6. What is your preferred programming language?
+
+7. What other programming languages are you comfortable with? Please separate each with a comma:
+
+8. What interests you about Rust?
+
+9. Which projects from the website would you prefer to work on? Please explain why.
+
+10. What previous experience do you have that you think would be valuable in this initiative?
+
+11. How long ago did you first start programming, designing, or working with technology?
+
+12. How have you, and how do you continue to, learn about programming/design/technology?
+
+13. Rust Reach is all about bringing new perspectives to Rust. Please share some of the unique perspective you would bring to the project.
+
+14. How did you hear about this initiative?
+
+15. Is there anything else you'd like us to know?

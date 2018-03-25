@@ -44,7 +44,7 @@ nav, footer {
   height: 40px;;
 }
 
-nav a {
+nav a, footer a {
   display: inline-block;
   padding: 0 20px;
 }
