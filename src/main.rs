@@ -6,7 +6,6 @@ extern crate rocket;
 extern crate rocket_contrib;
 #[macro_use] extern crate serde_derive;
 
-use std::io;
 use std::path::{Path, PathBuf};
 
 use rocket_contrib::Template;
