@@ -49,10 +49,6 @@ nav a, footer a {
   padding: 0 20px;
 }
 
-.row {
-  width: 100%;
-}
-
 .center {
   text-align: center;
 }
@@ -72,7 +68,6 @@ section h2 {
 
 .organizer {
   display: inline-block;
-  width: 40%;
   background: black;
   margin: 10px;
   text-align: center;
@@ -83,8 +78,14 @@ section h2 {
   width: 80%;
 }
 
+.organizer h3 {
+  margin-bottom: 0;
+  display:inline;
+  vertical-align: middle;
+}
+
 .organizer h3, #projects h3, .partner h4, .quote h4 {
-  font-size: 1.8em;
+  font-size: 1.6em;
   color: white;
   font-family: 'Bangers', sans-serif;
   text-shadow:
@@ -93,7 +94,6 @@ section h2 {
   -1px 1px 0 #000,
   1px 1px 0 #000,
   2px 2px 0px #2CAFD9;  
-  margin: 0 auto;
 }
 
 .project, .testimonial {
@@ -130,18 +130,16 @@ section h2 {
 }
 
 .quote {
-  width: 70%;  
   vertical-align: top;
   display: inline-block;
 }
 
 .person {
-  width: 20%;
   display: inline-block;
 }
 
 .person img {
-  width: 80%;
+  width: 100%;
 }
 
 blockquote {
