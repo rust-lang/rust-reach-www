@@ -7,6 +7,7 @@ body {
 
 header h1, header h2 {
   font-family: 'Bangers', sans-serif;
+  -webkit-font-smoothing: antialiased;
   background-color: #2CAFD9;
   color: white;
   padding: 0 30px 20px 30px;;
@@ -62,6 +63,7 @@ section {
 
 section h2 {
   font-family: 'Bangers', sans-serif;
+  -webkit-font-smoothing: antialiased;
   color: #2CAFD9;
   text-shadow: 2px 2px 0px black;
 }
@@ -88,6 +90,7 @@ section h2 {
   font-size: 1.6em;
   color: white;
   font-family: 'Bangers', sans-serif;
+  -webkit-font-smoothing: antialiased;
   text-shadow:
   -1px -1px 0 #000,
   1px -1px 0 #000,
@@ -176,6 +179,7 @@ blockquote:before {
   padding: 10px 20px;
   height: auto;
   font-family: 'Bangers', sans-serif;
+  -webkit-font-smoothing: antialiased;
   text-shadow:
   -1px -1px 0 #000,
   1px -1px 0 #000,
