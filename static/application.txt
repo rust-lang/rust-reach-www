@@ -28,6 +28,8 @@ Your answers will be used to inform our choices regarding participants for the p
 
 13. Rust Reach is all about bringing new perspectives to Rust. Please share some of the unique perspective you would bring to the project.
 
-14. How did you hear about this initiative?
+14. If you have ways you can bring valuable diversity to Rust, please share here.
 
-15. Is there anything else you'd like us to know?
+15. How did you hear about this initiative?
+
+16. Is there anything else you'd like us to know?
