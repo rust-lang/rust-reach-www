@@ -194,3 +194,7 @@ blockquote:before {
 #apply p {
   text-align: center;
 }
+
+.strike {
+  text-decoration: line-through;
+}
