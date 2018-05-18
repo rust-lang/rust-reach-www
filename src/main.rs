@@ -25,6 +25,15 @@ fn index() -> Template {
     Template::render(page, &context)
 }
 
+#[get("/2018/participants")]
+fn participants() -> Template {
+    let page = "participants-index".to_string();
+    let context = Context {
+      parent: "layout".to_string(),
+    };
+    Template::render(page, &context)
+}
+
 #[get("/static/<file..>", rank = 1)]
 fn files(file: PathBuf) -> Option<NamedFile> {
     NamedFile::open(Path::new("static/").join(file)).ok()
@@ -33,5 +42,5 @@ fn files(file: PathBuf) -> Option<NamedFile> {
 fn main() {
     rocket::ignite()
       .attach(Template::fairing())
-      .mount("/", routes![index, files]).launch();
+      .mount("/", routes![index, participants, files]).launch();
 }
