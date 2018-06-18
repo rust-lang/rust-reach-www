@@ -100,6 +100,19 @@ section h2 {
   2px 2px 0px #2CAFD9;  
 }
 
+#projects h3 span.location, #projects h3 span.project {
+  font-size: 0.8em;
+  padding-left: 1em;
+  font-family: 'Bangers', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #2CAFD9;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
 .project, .testimonial {
   padding: 20px;
   background-color: black;
@@ -197,4 +210,24 @@ blockquote:before {
 
 .strike {
   text-decoration: line-through;
+}
+
+.location img, span.project img {
+  height: 0.8em;
+  padding-right: .25em;
+}
+
+.description {
+  postiion:relative;
+  margin-bottom: 30px;
+}
+
+.social {
+  position: absolute;
+  bottom: 20px;
+}
+
+.social img {
+  padding: 0 10px;
+  width: 2em;
 }
