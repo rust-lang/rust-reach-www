@@ -231,3 +231,25 @@ blockquote:before {
   padding: 0 10px;
   width: 2em;
 }
+
+#map {
+  height: 300px;
+}
+
+.participant-marker {
+  background-image: url(rust-logo-blue.png);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.partner-marker {
+  background-image: url(rust-logo-blk.png);
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}

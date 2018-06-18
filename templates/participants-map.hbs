@@ -1,0 +1,246 @@
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
+<script>
+  var geojson = {
+  type: 'FeatureCollection',
+  features: [{
+    type: 'Participant',
+    geometry: {
+      type: 'Point',
+      coordinates: [18.490409999999997, -22.95764]
+    },
+    properties: {
+      description: 'Namibia'
+    }
+  },
+  {
+    type: 'Participant',
+    geometry: {
+      type: 'Point',
+      coordinates: [-119.41793239999998, 36.778261]
+    },
+    properties: {
+      description: 'California, USA'
+    }
+  },
+  {
+    type: 'Participant',
+    geometry: {
+      type: 'Point',
+      coordinates: [-119.41793239999998, 36.778261]
+    },
+    properties: {
+      description: 'California, USA'
+    }
+  },
+  {
+    type: 'Participant',
+    geometry: {
+      type: 'Point',
+      coordinates: [50.72639449999997, 55.1802364]
+    },
+    properties: {
+      description: 'Tatarstan Republic, Russia'
+    }
+  },
+  {
+    type: 'Participant',
+    geometry: {
+      type: 'Point',
+      coordinates: [-69.44546889999998, 45.253783]
+    },
+    properties: {
+      description: 'Maine, USA'
+    }
+  },
+  {
+    type: 'Participant',
+    geometry: {
+      type: 'Point',
+      coordinates: [113.92132700000002, -0.789275]
+    },
+    properties: {
+      description: 'Indonesia'
+    }
+  },
+  {
+    type: 'Participant',
+    geometry: {
+      type: 'Point',
+      coordinates: [138.252924, 36.204824]
+    },
+    properties: {
+      description: 'Japan'
+    }
+  },
+  {
+    type: 'Participant',
+    geometry: {
+      type: 'Point',
+      coordinates: [2.213749000000007, 46.227638]
+    },
+    properties: {
+      description: 'France'
+    }
+  },
+  {
+    type: 'Participant',
+    geometry: {
+      type: 'Point',
+      coordinates: [57.55215199999998, -20.348404]
+    },
+    properties: {
+      description: 'Mauritius'
+    }
+  },
+  {
+    type: 'Participant',
+    geometry: {
+      type: 'Point',
+      coordinates: [-103.34943759999999, 20.6595382]
+    },
+    properties: {
+      description: 'Jalisco, Mexico'
+    }
+  },
+  {
+    type: 'Participant',
+    geometry: {
+      type: 'Point',
+      coordinates: [104.19539699999996, 35.86166]
+    },
+    properties: {
+      description: 'China'
+    }
+  },
+  {
+    type: 'Participant',
+    geometry: {
+      type: 'Point',
+      coordinates: [-74.0059728, 40.7127753]
+    },
+    properties: {
+      description: 'New York City, USA'
+    }
+  },
+  {
+    type: 'Participant',
+    geometry: {
+      type: 'Point',
+      coordinates: [3.379205700000057, 6.5243793]
+    },
+    properties: {
+      description: 'Lagos, Nigeria'
+    }
+  },
+  {
+    type: 'Participant',
+    geometry: {
+      type: 'Point',
+      coordinates: [78.96288000000004, 20.593684]
+    },
+    properties: {
+      description: 'India'
+    }
+  },
+  {
+    type: 'Partner',
+    geometry: {
+      type: 'Point',
+      coordinates: [-73.79485160000002, 40.7282239]
+    },
+    properties: {
+      description: 'Queens, NY, USA'
+    }
+  },
+  {
+    type: 'Partner',
+    geometry: {
+      type: 'Point',
+      coordinates: [-71.05888010000001, 42.3600825]
+    },
+    properties: {
+      description: 'Boston, MA, USA'
+    }
+  },
+  {
+    type: 'Partner',
+    geometry: {
+      type: 'Point',
+      coordinates: [-122.41941550000001, 37.7749295]
+    },
+    properties: {
+      description: 'San Francisco, CA, USA'
+    }
+  },
+  {
+    type: 'Partner',
+    geometry: {
+      type: 'Point',
+      coordinates: [-122.65871850000002, 45.5122308]
+    },
+    properties: {
+      description: 'Portland, OR, USA'
+    }
+  },
+  {
+    type: 'Partner',
+    geometry: {
+      type: 'Point',
+      coordinates: [-7.692053600000008, 53.1423672]
+    },
+    properties: {
+      description: 'Ireland'
+    }
+  },
+  {
+    type: 'Partner',
+    geometry: {
+      type: 'Point',
+      coordinates: [13.404953999999975, 52.52000659999999]
+    },
+    properties: {
+      description: 'Berlin, Germany'
+    }
+  },
+  {
+    type: 'Partner',
+    geometry: {
+      type: 'Point',
+      coordinates: [-105.87009009999997, 34.5199402]
+    },
+    properties: {
+      description: 'New Mexico, USA'
+    }
+  }]
+};
+</script>
+<script>
+
+mapboxgl.accessToken = 'pk.eyJ1IjoiYWdkdWJzIiwiYSI6ImNqaWtxd2g1ZDFkd2QzcHBmMXI5Ynl2azMifQ.VO3IFPF30gIRlK_vwtRmgA';
+
+var map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/mapbox/light-v9',
+  center: [10, 20],
+  zoom: 0.7
+});
+
+geojson.features.forEach(function(marker) {
+  var el = document.createElement('div');
+  
+  if (marker.type === 'Participant') {
+    el.className = 'participant-marker';
+  } else {
+    el.className = 'partner-marker';
+  }
+
+  console.log(marker.properties.description, marker.geometry.coordinates)
+
+  new mapboxgl.Marker(el)
+  .setLngLat(marker.geometry.coordinates)
+  .setPopup(new mapboxgl.Popup({ offset: 25 })
+  .setHTML('<h3>' + marker.properties.description + '</h3>'))
+  .addTo(map);
+});
+
+</script>
