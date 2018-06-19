@@ -253,3 +253,18 @@ blockquote:before {
   border-radius: 50%;
   cursor: pointer;
 }
+
+button.mapboxgl-popup-close-button {
+  height: auto;
+  padding: 5px 5px;
+  line-height: .5em;
+}
+
+div.div.mapboxgl-popup-content {
+  padding: 0;
+}
+
+div.mapboxgl-popup-content h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
