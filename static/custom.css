@@ -260,8 +260,8 @@ button.mapboxgl-popup-close-button {
   line-height: .5em;
 }
 
-div.div.mapboxgl-popup-content {
-  padding: 0;
+div.mapboxgl-popup-content {
+  padding: 5px 15px 5px;
 }
 
 div.mapboxgl-popup-content h3 {
