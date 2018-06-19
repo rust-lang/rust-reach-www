@@ -261,6 +261,7 @@ button.mapboxgl-popup-close-button {
 }
 
 div.mapboxgl-popup-content {
+  font-family: 'Fira Sans', sans-serif;
   padding: 5px 15px 5px;
 }
 
